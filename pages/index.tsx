@@ -51,24 +51,10 @@ export default function IndexPage({ character_list }: Props) {
                 className="column is-4-mobile is-3-tablet is-2-desktop is-relative has-text-centered"
               >
                 <Image src={photo} alt={char_name} width={210} height={229} />
-                <div className="field is-grouped is-grouped-multiline">
-                  <div className="control">
-                    <div className="tags has-addons are-normal">
-                      <span className="tag is-dark">排名</span>
-                      <span className="tag is-info">{index + 1}</span>
-                    </div>
-                  </div>
-                  <div className="control">
-                    <div className="tags has-addons are-normal">
-                      <span className="tag is-dark">粉丝</span>
-                      <span className="tag is-success">{fans_num}</span>
-                    </div>
-                  </div>
-                  <div className="control">
-                    <div className="tags has-addons are-normal">
-                      <span className="tag is-dark">投票</span>
-                      <span className="tag is-link">{vote_num}</span>
-                    </div>
+                <div className="control">
+                  <div className="tags has-addons are-normal">
+                    <span className="tag is-dark">投票</span>
+                    <span className="tag is-link">{vote_num}</span>
                   </div>
                 </div>
                 {description && <p>{description}</p>}
